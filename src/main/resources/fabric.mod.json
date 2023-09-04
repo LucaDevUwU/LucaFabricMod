@@ -3,9 +3,9 @@
 	"id": "lucafabricmod",
 	"version": "${version}",
 	"name": "LucaFabricMod",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"description": "A simple mod that explores the Fabric mod capabilities",
 	"authors": [
-		"Me!"
+		"LucaaDev"
 	],
 	"contact": {
 		"homepage": "https://fabricmc.net/",
@@ -17,7 +17,7 @@
 	"entrypoints": {
 		"main": [
 			{
-				"value": "dev.lucaadev.ExampleMod",
+				"value": "dev.lucaadev.LucaMod",
 				"adapter": "kotlin"
 			}
 		],
@@ -28,21 +28,11 @@
 			}
 		]
 	},
-	"mixins": [
-		"lucafabricmod.mixins.json",
-		{
-			"config": "lucafabricmod.client.mixins.json",
-			"environment": "client"
-		}
-	],
 	"depends": {
 		"fabricloader": ">=0.14.22",
 		"minecraft": "~1.20.1",
 		"java": ">=17",
 		"fabric-api": "*",
 		"fabric-language-kotlin": ">=1.9.10"
-	},
-	"suggests": {
-		"another-mod": "*"
 	}
 }
